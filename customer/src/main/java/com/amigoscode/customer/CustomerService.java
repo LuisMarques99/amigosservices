@@ -1,13 +1,10 @@
-package com.amigoscode.customer.service;
+package com.amigoscode.customer;
 
-import com.amigoscode.customer.model.Customer;
-import com.amigoscode.customer.model.dto.CustomerRegistrationRequestDTO;
 import org.springframework.stereotype.Service;
 
 @Service
-public record DefaultCustomerService() implements CustomerService {
-    @Override
-    public void registerCustomer(CustomerRegistrationRequestDTO request) {
+public record CustomerService() {
+    public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
                 .lastName(request.lastName())
