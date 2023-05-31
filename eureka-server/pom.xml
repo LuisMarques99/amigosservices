@@ -12,9 +12,13 @@
     <artifactId>eureka-server</artifactId>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.version>3.11.0</maven.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.dependencies.version>3.0.6</spring.boot.dependencies.version>
+        <spring.boot.maven.plugin.version>3.0.6</spring.boot.maven.plugin.version>
+        <spring.cloud.version>2022.0.3</spring.cloud.version>
     </properties>
 
     <dependencies>
